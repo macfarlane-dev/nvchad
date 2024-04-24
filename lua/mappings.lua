@@ -27,5 +27,5 @@ map("n", "<leader>gC", ":Git commit<CR>", { desc = "Git Commit" })
 
 map("n", "<leader>ghs", ":Gitsigns stage_hunk<CR>", { desc = "Git Hunk Stage" })
 map("n", "<leader>ghr", ":Gitsigns reset_hunk<CR>", { desc = "Git Hunk Reset" })
-map("n", "<leader>gB", ":Gitsigns toggle_current_line_blame", { desc = "Git toggle line Blame" })
-map("n", "<leader>go", ":Gitsigns toggle_signs", { desc = "Toggle On/Off git signs" })
+map("n", "<leader>gB", ":Gitsigns toggle_current_line_blame<CR>", { desc = "Git toggle line Blame" })
+map("n", "<leader>go", ":Gitsigns toggle_signs<CR>", { desc = "Toggle On/Off git signs" })
