@@ -18,12 +18,12 @@ map("n", "<leader>tt", ":ToggleTerm direction=float<CR>", { desc = "Toggle float
 -- git
 map("n", "<leader>gl", ":Telescope git_commits<CR>", { desc = "Git Log" })
 
-map("n", "<leader>gs", ":Git<CR>", { desc = "Git Status" })
+map("n", "<leader>gs", ":Gedit :<CR>", { desc = "Git Status" })
 map("n", "<leader>gd", ":Gvdiff<CR>", { desc = "Git Diff" })
 map("n", "<leader>gD", ":Gvdiff ", { desc = "Git Diff another branch" })
 map("n", "<leader>ga", ":Gwrite<CR>", { desc = "Git Add" })
 map("n", "<leader>gR", ":Gread<CR>", { desc = "Git Reset" })
-map("n", "<leader>gC", ":Git commit<CR>", { desc = "Git Commit" })
+map("n", "<leader>gC", ":vert Git commit<CR>", { desc = "Git Commit" })
 
 map("n", "<leader>ghs", ":Gitsigns stage_hunk<CR>", { desc = "Git Hunk Stage" })
 map("n", "<leader>ghu", ":Gitsigns undo_stage_hunk<CR>", { desc = "Git Hunk Stage" })
