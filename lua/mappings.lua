@@ -12,20 +12,6 @@ map("i", "jk", "<ESC>")
 map("n", "<leader>fk", ":Telescope keymaps<CR>", { desc = "Telescope Find Keymaps" })
 map("n", "<leader>f\"", ":Telescope registers<CR>", { desc = "Telescope Find registers" })
 
--- terminal
-map({ "n", "t" }, "<A-v>", function()
-  require("nvchad.term").toggle { pos = "vsp", id = "vtoggleTerm", size = 0.4 }
-end, { desc = "Terminal Toggle Vertical term" })
-
-map({ "n", "t" }, "<A-h>", function()
-  require("nvchad.term").toggle { pos = "sp", id = "htoggleTerm", size = 0.4 }
-end, { desc = "Terminal New Horizontal term" })
-
-map({ "n", "t" }, "<A-i>", function()
-  require("nvchad.term").toggle { pos = "float", id = "floatTerm", float_opts = {
-  width = 0.8, height = 0.8, col = 0.1, row = 0.05 }}
-end, { desc = "Terminal Toggle Floating term" })
-
 -- git
 map("n", "<leader>gl", ":Telescope git_commits<CR>", { desc = "Git Log" })
 
