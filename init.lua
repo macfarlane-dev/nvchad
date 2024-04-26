@@ -38,5 +38,4 @@ vim.schedule(function()
   require "mappings"
 end)
 
-require("configs.nvim-tree").defaults()
--- require("toggleterm")
+require("configs.nvim-tree")
