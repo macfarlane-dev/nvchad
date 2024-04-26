@@ -77,11 +77,6 @@ return {
     },
   },
   {
-    "akinsho/toggleterm.nvim",
-    version = "*",
-    config = true
-  },
-  {
     "tpope/vim-fugitive",
     lazy = false,
   },
