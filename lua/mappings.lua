@@ -27,3 +27,5 @@ map("n", "<leader>ghu", ":Gitsigns undo_stage_hunk<CR>", { desc = "Git Hunk Stag
 map("n", "<leader>ghr", ":Gitsigns reset_hunk<CR>", { desc = "Git Hunk Reset" })
 map("n", "<leader>gB", ":Gitsigns toggle_current_line_blame<CR>", { desc = "Git toggle line Blame" })
 map("n", "<leader>go", ":Gitsigns toggle_signs<CR>", { desc = "Toggle On/Off git signs" })
+map("n", "c]", ":Gitsigns prev_hunk<CR>", { desc = "Previous git code hunk" })
+map("n", "c[", ":Gitsigns next_hunk<CR>", { desc = "Next git code hunk" })
