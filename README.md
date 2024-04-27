@@ -27,13 +27,17 @@ This project forks the popular [NvChad](https://nvchad.com/docs/quickstart/insta
 
 ## Installing Plugins
 
-The Lazy plugin is your plugin manager. Understanding the [Plugin Spec](https://github.com/folke/lazy.nvim) is essential to configuring plugins.
+### Lazy plugin manager
+
+Understanding the [Plugin Spec](https://github.com/folke/lazy.nvim) is essential to configuring plugins.
 
 * After cloning, sync plugin versions to lazy-lock.json with `:Lazy sync`
 * Use the `:Lazy` dashboard to install/update to latest versions/debug and more
 * Add, remove and configure plugins from the `lua/plugins` directory
 
-Mason manages tooling such as LSP servers, DAP servers, linters, and formatters
+### Mason language manager
+
+Mason manages tooling for code completion (LSP servers), debuggers (DAP servers), linters, and formatters
 Read more at `:h mason`.
 
 * Install the default tools with `:MasonInstallAll`
@@ -41,7 +45,8 @@ Read more at `:h mason`.
 * Use the `:Mason` dashboard to search packages
 * Install packages with `:MasonInstall <package_name>` 
 
-Treesitter provides language-specific text highlighting.
+### Treesitter text highlighting
+
 Read more at `:h treesitter`.
 
 * Install the defaults with `:TSInstall all` 

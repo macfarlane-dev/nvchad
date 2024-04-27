@@ -8,6 +8,10 @@ These notes shall record key learnings which are otherwise not recorded in the R
 Nvim-tree is a useful navigational aid, but it is not the most efficient way.
 You will be more efficient if you can get used to searching files, e.g. `<space>fg`.
 
+### Text completion
+
+NvChad provides the plugin `hrsh7th/nvim-cmp` as a dependency for completion.
+In Insert mode, use `<C-space>` to get suggested completions. 
 
 ### Multiline Editing
 
