@@ -1,3 +1,4 @@
+-- https://github.com/nvim-tree/nvim-tree.lua/wiki/Open-At-Startup
 -- starting directories opens nvim-tree immediately
 local function open_nvim_tree(data)
 
@@ -20,6 +21,7 @@ end
 vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
 
 
+-- https://github.com/nvim-tree/nvim-tree.lua/wiki/Auto-Close
 -- close neovim if nvim-tree is the last window after closing a buffer
 local function tab_win_closed(winnr)
   local api = require"nvim-tree.api"
