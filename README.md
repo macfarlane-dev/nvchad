@@ -49,9 +49,9 @@ Read more at `:h mason`.
 
 Read more at `:h treesitter`.
 
-* Install the defaults with `:TSInstall all` 
+* On startup Treesitter installs packages listed in `lua/plugins/init.lua`, `opts.ensure_installed`  
 * Search supported languages [here](https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file#supported-languages)
-* Install packages with `:TSInstall <package_name>`
+* Install additional packages with `:TSInstall <package_name>`
 
 
 ## Customisation

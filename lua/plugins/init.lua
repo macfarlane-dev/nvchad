@@ -30,6 +30,7 @@ return {
   		ensure_installed = {
   		  "vim", "lua", "vimdoc",
         "json", "yaml", "groovy", "query", "regex", "bash",
+        "git_config",
         "terraform"
   		},
   	},
