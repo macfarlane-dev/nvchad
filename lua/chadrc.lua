@@ -5,8 +5,8 @@
 local M = {}
 
 M.ui = {
-	theme = "doomchad",
-  theme_toggle = { "doomchad", "catppuccin" },
+	theme = "github_dark",
+  theme_toggle = { "github_dark", "catppuccin" },
 
   statusline = {
     theme = "default",

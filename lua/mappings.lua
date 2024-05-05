@@ -32,3 +32,6 @@ map("n", "]c", ":Gitsigns next_hunk<CR>", { desc = "Next git Change hunk" })
 
 -- telescope
 map("n", "<leader>fg", ":Telescope git_files<CR>", { desc = "Telescope Find Git files" })
+
+-- terminals
+map("t", "<ESC>", "<C-\\><C-n>", { desc = "Exit TERMINAL to NTERMINAL mode" })

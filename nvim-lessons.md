@@ -18,3 +18,9 @@ In Insert mode, use `<C-space>` to get suggested completions.
 1. `<C-q>` OR `<A-left click>`, select rows 
 2. `I`, begin editing one row
 3. `Esc`, apply changes to all rows
+
+### Terminal management
+
+Toggle a single terminal open and closed with `<Alt-v>`. 
+Spawn new terminals with `<leader>v`.
+In **TERMINAL** mode, use `<ESC>` to enter **NTERMINAL** mode.
