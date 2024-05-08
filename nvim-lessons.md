@@ -24,3 +24,9 @@ In Insert mode, use `<C-space>` to get suggested completions.
 Toggle a single terminal open and closed with `<Alt-v>`. 
 Spawn new terminals with `<leader>v`.
 In **TERMINAL** mode, use `<ESC>` to enter **NTERMINAL** mode.
+
+### Markdown tabs and indentation
+
+In insert mode:
+* `<c-d>` deletes indentation at the start of the line
+* `<c-t>` adds indentation at the start of the line
