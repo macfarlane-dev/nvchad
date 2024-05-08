@@ -81,4 +81,12 @@ return {
     "tpope/vim-fugitive",
     lazy = false,
   },
+  {
+    "https://github.com/preservim/vim-markdown",
+    branch = "master",
+    dependencies = {
+      "https://github.com/godlygeek/tabular"
+    },
+    ft = "markdown"
+  }
 }
