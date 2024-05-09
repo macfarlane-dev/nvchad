@@ -35,3 +35,7 @@ map("n", "<leader>fg", ":Telescope git_files<CR>", { desc = "Telescope Find Git 
 
 -- terminals
 map("t", "<ESC>", "<C-\\><C-n>", { desc = "Exit TERMINAL to NTERMINAL mode" })
+
+-- markdown
+map("n", "<leader>sc", ":set conceallevel=2<CR>", { desc = "Style markdown to Conceal" })
+map("n", "<leader>sr", ":set conceallevel=0<CR>", { desc = "Style markdown to Reveal" })

@@ -87,6 +87,10 @@ return {
     dependencies = {
       "https://github.com/godlygeek/tabular"
     },
-    ft = "markdown"
+    ft = "markdown",
+    config = function()
+      vim.g.vim_markdown_folding_disabled = 1
+      vim.opt.conceallevel = 2
+    end
   }
 }
