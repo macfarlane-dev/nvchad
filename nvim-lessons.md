@@ -2,6 +2,14 @@
 
 These notes shall record key learnings which are otherwise not recorded in the ReadMe or native documentation.
 
+### Help!
+
+Some plugins like nvim-tree have hidden help.
+Use `g?` while the cursor is focused on a plugin window for related keybindings.
+
+### Escaping INSERT and TERMAINAL mode fast is a jk
+
+As an alternative to `<ESC>` we provide a shortcut `jk` to escape INSERT and TERMINAL mode.
 
 ### Navigation
 
@@ -23,7 +31,7 @@ In Insert mode, use `<C-space>` to get suggested completions.
 
 Toggle a single terminal open and closed with `<Alt-v>`. 
 Spawn new terminals with `<leader>v`.
-In **TERMINAL** mode, use `<ESC>` to enter **NTERMINAL** mode.
+In **TERMINAL** mode, use `<ESC>` or `jk` to enter **NTERMINAL** mode.
 
 ### Markdown tabs and indentation
 
