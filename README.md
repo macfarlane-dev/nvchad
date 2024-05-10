@@ -78,4 +78,5 @@ Read more at `:h treesitter`.
 * [Learn lua in 15 minutes](https://learnxinyminutes.com/docs/lua/)
 * [NeoVim guide to Lua](https://neovim.io/doc/user/lua-guide.html)
 * [Convert vimscript to Lua](https://neovim.io/doc/user/lua-guide.html#lua-guide)
+* [Extending lazy plugin configurations with AstroVim](https://docs.astronvim.com/configuration/customizing_plugins/). While this project does not use Astrovim, this is the best documentation of overriding lazy.vim plugin configurations.
 
