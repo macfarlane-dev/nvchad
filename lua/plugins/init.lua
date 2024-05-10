@@ -92,5 +92,15 @@ return {
       vim.g.vim_markdown_folding_disabled = 1
       vim.opt.conceallevel = 2
     end
-  }
+  },
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = function(_, opts)
+      opts.filters.custom = {
+        "^node_modules$",
+        "^.git$",
+        "^.github$",
+      }
+    end,
+  },
 }
