@@ -103,4 +103,17 @@ return {
       }
     end,
   },
+  {
+    "Wansmer/treesj",
+    lazy = false,
+    keys = {
+      { "<leader>lt", ":TSJToggle<CR>", desc = "multi-Line Toggle" },
+      { "<leader>lj", ":TSJJoin<CR>", desc = "multi-Line Join" },
+      { "<leader>ls", ":TSJSplit<CR>", desc = "multi-Line Split " },
+    },
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
+    config = function()
+      require('treesj').setup()
+    end,
+  },
 }
