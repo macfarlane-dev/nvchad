@@ -105,7 +105,6 @@ return {
   },
   {
     "Wansmer/treesj",
-    lazy = false,
     keys = {
       { "<leader>lt", ":TSJToggle<CR>", desc = "multi-Line Toggle" },
       { "<leader>lj", ":TSJJoin<CR>", desc = "multi-Line Join" },
