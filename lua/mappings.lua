@@ -8,6 +8,10 @@ map("n", ";", ":", { desc = "CMD enter command mode" })
 -- alternative escape from interactive mode
 map("i", "jk", "<ESC>")
 
+-- An alternative way of saving
+map("i", "kjl", "<ESC>:w<CR>", { desc = "Save and exit insert mode" })
+map("i", "<C-s>", "<ESC>:w<CR>a", { desc = "Save and say in insert mode" })
+
 -- search
 map("n", "<leader>fk", ":Telescope keymaps<CR>", { desc = "Telescope Find Keymaps" })
 map("n", "<leader>f\"", ":Telescope registers<CR>", { desc = "Telescope Find registers" })
