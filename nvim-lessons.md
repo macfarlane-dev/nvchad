@@ -36,5 +36,12 @@ In **TERMINAL** mode, use `<ESC>` or `jk` to enter **NTERMINAL** mode.
 ### Markdown tabs and indentation
 
 In insert mode:
-* `<c-d>` deletes indentation at the start of the line
-* `<c-t>` adds indentation at the start of the line
+* `<C-d>` deletes indentation at the start of the line
+* `<C-t>` adds indentation at the start of the line
+
+### Increment and Decrement Numbers
+
+* `<C-a>` increments the number under the cursor or the first occurrence of a number to the right of the cursor
+* `<C-x>` decrements the number under the cursor or the first occurrence of a number to the right of the cursor
+
+[Read more here](https://learnbyexample.github.io/tips/vim-tip-1/).
