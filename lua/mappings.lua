@@ -46,3 +46,6 @@ map("t", "jk", "<C-\\><C-n>", { desc = "Exit TERMINAL to NTERMINAL mode" })
 -- markdown
 map("n", "<leader>sc", ":set conceallevel=2<CR>", { desc = "Style markdown to Conceal" })
 map("n", "<leader>sr", ":set conceallevel=0<CR>", { desc = "Style markdown to Reveal" })
+
+-- special characters
+map("i", "<S-Tab>", "<C-V><Tab>", { desc = "Literal tab character" })
