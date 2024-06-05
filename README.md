@@ -5,10 +5,23 @@ This project forks the popular [NvChad](https://nvchad.com/docs/quickstart/insta
 ## Dependencies
 
 * [NeoVim](https://github.com/neovim/neovim/releases/) >=0.9.5
+	* Get the latest version and `sha256sum` checksum from [the releases page](https://github.com/neovim/neovim/releases)
+	```shell
+	cd /tmp
+	version=0.10.0
+	curl -LO https://github.com/neovim/neovim/releases/download/v${version}/nvim-linux64.tar.gz 
+	# Use the checksum from the releases page to validate the downloaded file. 
+	echo 'be1f0988d0de71c375982b87b86cd28d2bab35ece8285abe3b0aac57604dfc5a  nvim-linux64.tar.gz' \
+		| sha256sum -c -
+	tar xzf nvim-linux64.tar.gz
+	sudo mv nvim-linux64 /opt/nvim/${version}
+	sudo ln -s /opt/nvim/${version}/bin/nvim /usr/bin/nvim
+	rm /tmp/nvim-linux64.tar.gz
+	```
 * [Nerd Font](https://www.nerdfonts.com/) such as CaskaydiaCove Nerd Font (reserved name: Cascadia Code)
     * Make sure the font doesn't end with 'Mono' to prevent small icons.
     * Configure your terminal to use the Nerd Font
-* [Git] >= 2.19.0
+* Git >= 2.19.0
     * [Git Bash for Windows](https://gitforwindows.org/)
 * [Make or Cmake] (C compiler used to build the plugin `telescope-fzf-native`)
     * Ubuntu: make from `sudo apt-get install build-essential`
