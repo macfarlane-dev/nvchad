@@ -15,7 +15,7 @@ This project forks the popular [NvChad](https://nvchad.com/docs/quickstart/insta
 		| sha256sum -c -
 	tar xzf nvim-linux64.tar.gz
 	sudo mv nvim-linux64 /opt/nvim/${version}
-	sudo ln -s /opt/nvim/${version}/bin/nvim /usr/bin/nvim
+	sudo ln -s /opt/nvim/${version}/bin/nvim /usr/local/bin/nvim
 	rm /tmp/nvim-linux64.tar.gz
 	```
 * [Nerd Font](https://www.nerdfonts.com/) such as CaskaydiaCove Nerd Font (reserved name: Cascadia Code)
