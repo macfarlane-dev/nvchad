@@ -8,21 +8,44 @@ return {
   },
   {
     "neovim/nvim-lspconfig",
+    dependencies = {
+      -- For LSP completion we must configure in order
+      -- 1. mason
+      -- 2. mason-lspconfig.nvim
+      -- 3. nvim-lspconfig
+      {
+        "williamboman/mason.nvim",
+        opts = {
+          ensure_installed = {
+            "lua-language-server", "stylua",
+            "shellcheck", "shfmt",
+    --			"prettier",
+            "terraform-ls"
+          },
+        },
+      },
+      {
+        "williamboman/mason-lspconfig.nvim"
+      },
+    },
     config = function()
       require("nvchad.configs.lspconfig").defaults()
       require "configs.lspconfig"
+
+      -- automatic lsp completion setup
+      -- :h mason-lspconfig-automatic-server-setup
+      require("mason").setup()
+      require("mason-lspconfig").setup()
+
+      require("mason-lspconfig").setup_handlers {
+          -- The first entry (without a key) will be the default handler
+          -- and will be called for each installed server that doesn't have
+          -- a dedicated handler.
+          function (server_name) -- default handler (optional)
+              require("lspconfig")[server_name].setup {}
+          end,
+      }
     end,
-  },
-  {
-  	"williamboman/mason.nvim",
-  	opts = {
-  		ensure_installed = {
-  			"lua-language-server", "stylua",
-        "shellcheck", "shfmt",
---			"prettier",
-        "terraform-ls"
-  		},
-  	},
   },
   {
     "nvim-treesitter/nvim-treesitter",
