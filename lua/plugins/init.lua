@@ -20,7 +20,8 @@ return {
             "lua-language-server", "stylua",
             "shellcheck", "shfmt",
     --			"prettier",
-            "terraform-ls"
+            "terraform-ls",
+            "pyright",
           },
         },
       },
