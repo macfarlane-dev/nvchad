@@ -5,6 +5,9 @@ local map = vim.keymap.set
 -- alternative entrance to command mode
 map("n", ";", ":", { desc = "CMD enter command mode" })
 
+-- WSL specific yank to Windows clipboard
+map("v", "<leader>y", ":'<,'>w !clip.exe<CR>", { desc = "Yank from WSL to Windows clipboard" })
+
 -- alternative escape from interactive mode
 map("i", "jk", "<ESC>")
 
