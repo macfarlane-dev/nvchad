@@ -14,6 +14,7 @@ This project forks the popular [NvChad](https://nvchad.com/docs/quickstart/insta
 	echo 'be1f0988d0de71c375982b87b86cd28d2bab35ece8285abe3b0aac57604dfc5a  nvim-linux64.tar.gz' \
 		| sha256sum -c -
 	tar xzf nvim-linux64.tar.gz
+	sudo mkdir -p /opt/nvim
 	sudo mv nvim-linux64 /opt/nvim/${version}
 	sudo ln -s /opt/nvim/${version}/bin/nvim /usr/local/bin/nvim
 	rm /tmp/nvim-linux64.tar.gz
@@ -65,6 +66,19 @@ Read more at `:h treesitter`.
 * On startup Treesitter installs packages listed in `lua/plugins/init.lua`, `opts.ensure_installed`  
 * Search supported languages [here](https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file#supported-languages)
 * Install additional packages with `:TSInstall <package_name>`
+
+### Building telescope-fzf-native
+
+`telescope-fzf-native` must be compiled locally. This project is configured to build automatically on Linux with `make`. If this fails the first time it can be re-built from the `:Lazy` menu by navigating to `telescope-fzf-native` and hitting `gb`.
+
+Windows users must
+* Install Cmake
+* Navigate to `/AppData/Local/nvim-data/lazy/telescope-fzf-native`
+* Run build command ([sourced from official docs](https://github.com/nvim-telescope/telescope-fzf-native.nvim))
+
+```
+cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build
+```
 
 
 ## Customisation
