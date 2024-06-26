@@ -26,7 +26,9 @@ This project forks the popular [NvChad](https://nvchad.com/docs/quickstart/insta
     * [Git Bash for Windows](https://gitforwindows.org/)
 * [Make or Cmake] (C compiler used to build the plugin `telescope-fzf-native`)
     * Ubuntu: make from `sudo apt-get install build-essential`
-    * Windows: [Cmake from Visual Studio 2022 with C++ Build Tools](https://visualstudio.microsoft.com/downloads/)
+    * Windows: `Cmake` from Visual Studio 2022 with C++ Build Tools
+		* Download [Visual Studio Build Tools](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019) at All Downloads > Tools for Visual Studio > Build Tools for Visual Studio 2022
+		* Run the Build Tools manager and install `Desktop Development C++ build tools`
 * [Ripgrep](https://github.com/BurntSushi/ripgrep)
 * A terminal that supports true color and **undercurl** 
     * [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?rtc=1&hl=en-au&gl=AU) (Windows)
@@ -71,8 +73,8 @@ Read more at `:h treesitter`.
 
 `telescope-fzf-native` must be compiled locally. This project is configured to build automatically on Linux with `make`. If this fails the first time it can be re-built from the `:Lazy` menu by navigating to `telescope-fzf-native` and hitting `gb`.
 
-Windows users must
-* Install Cmake
+Windows users must install the Microsoft C++ build tools
+* Run `nvim` for the first time
 * Navigate to `/AppData/Local/nvim-data/lazy/telescope-fzf-native`
 * Run build command ([sourced from official docs](https://github.com/nvim-telescope/telescope-fzf-native.nvim))
 
