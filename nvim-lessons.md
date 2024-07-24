@@ -44,4 +44,8 @@ In insert mode:
 * `<C-a>` increments the number under the cursor or the first occurrence of a number to the right of the cursor
 * `<C-x>` decrements the number under the cursor or the first occurrence of a number to the right of the cursor
 
+### Paste-replacing a visual selection
+
+`shift + p` or `P` replaces the visually selected block with the default register.
+
 [Read more here](https://learnbyexample.github.io/tips/vim-tip-1/).
