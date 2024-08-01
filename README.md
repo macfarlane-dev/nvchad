@@ -4,14 +4,14 @@ This project forks the popular [NvChad](https://nvchad.com/docs/quickstart/insta
 
 ## Dependencies
 
-* [NeoVim](https://github.com/neovim/neovim/releases/) >=0.9.5
+* [NeoVim](https://github.com/neovim/neovim/releases/) >=0.10.0
 	* Get the latest version and `sha256sum` checksum from [the releases page](https://github.com/neovim/neovim/releases)
 	```shell
 	cd /tmp
-	version=0.10.0
+	version=0.10.1
 	curl -LO https://github.com/neovim/neovim/releases/download/v${version}/nvim-linux64.tar.gz 
 	# Use the checksum from the releases page to validate the downloaded file. 
-	echo 'be1f0988d0de71c375982b87b86cd28d2bab35ece8285abe3b0aac57604dfc5a  nvim-linux64.tar.gz' \
+	echo '4867de01a17f6083f902f8aa5215b40b0ed3a36e83cc0293de3f11708f1f9793  nvim-linux64.tar.gz' \
 		| sha256sum -c -
 	tar xzf nvim-linux64.tar.gz
 	sudo mkdir -p /opt/nvim
@@ -54,7 +54,7 @@ This project forks the popular [NvChad](https://nvchad.com/docs/quickstart/insta
 
 Understanding the [Plugin Spec](https://github.com/folke/lazy.nvim) is essential to configuring plugins.
 
-* After cloning, sync plugin versions to lazy-lock.json with `:Lazy sync`
+* After cloning, restore plugin versions to lazy-lock.json with `:Lazy restore`
 * Use the `:Lazy` dashboard to install/update to latest versions/debug and more
 * Add, remove and configure plugins from the `lua/plugins` directory
 
