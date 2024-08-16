@@ -39,5 +39,3 @@ vim.schedule(function()
 end)
 
 require("configs.nvim-tree")
-
-vim.treesitter.language.register("groovy", "jenkinsfile")
