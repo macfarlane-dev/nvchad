@@ -126,10 +126,13 @@ return {
   {
     "nvim-tree/nvim-tree.lua",
     opts = function(_, opts)
-      opts.filters.custom = {
-        "^node_modules$",
-        "^.git$",
-        "^.github$",
+      opts.filters = {
+        custom = {
+          "^node_modules$",
+          "^.git$",
+          "^.github$",
+        },
+        dotfiles = false,
       }
     end,
   },
