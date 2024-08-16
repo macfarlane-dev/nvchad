@@ -5,6 +5,7 @@ local python = require('treesj.langs.python')
 return {
   langs = {
     groovy = tsj_utils.merge_preset(java, {}),
+    jenkinsfile = tsj_utils.merge_preset(java, {}),
     terraform = tsj_utils.merge_preset(python, {}),
   }
 }
