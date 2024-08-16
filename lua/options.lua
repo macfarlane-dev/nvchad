@@ -3,7 +3,7 @@ require "nvchad.options"
 -- add yours here!
 local o = vim.o
 -- o.cursorlineopt ='both' -- to enable cursorline!
-o.autochdir = true
+o.autochdir = false
 o.colorcolumn = "80"
 
 if vim.opt.shell._value == "/bin/bash" then
@@ -15,7 +15,4 @@ end
 -- bash, zsh
 if string.match(vim.opt.shell._value, "sh.exe") then
   vim.opt.shellcmdflag = "-c"
-  vim.opt.shellxquote = "("
-  vim.opt.shellslash = true
 end
-

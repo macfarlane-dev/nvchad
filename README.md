@@ -24,7 +24,7 @@ This project forks the popular [NvChad](https://nvchad.com/docs/quickstart/insta
     * Configure your terminal to use the Nerd Font
 * Git >= 2.19.0
     * [Git Bash for Windows](https://gitforwindows.org/)
-* [Make or Cmake] (C compiler used to build the plugin `telescope-fzf-native`)
+* Make or Cmake (a C build tool) and `gcc` or `zig` (a C compiler used to build the plugin `telescope-fzf-native`)
     * Ubuntu: make from `sudo apt-get install build-essential`
     * Windows: `Cmake` from Visual Studio 2022 with C++ Build Tools
 		* Download [Visual Studio Build Tools](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019) at All Downloads > Tools for Visual Studio > Build Tools for Visual Studio 2022
@@ -35,6 +35,7 @@ This project forks the popular [NvChad](https://nvchad.com/docs/quickstart/insta
 		```
 		cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build
 		```
+	* Windows: `zig` with `winget install zig.zig` (may take 10-20 minutes to install)
 * [Ripgrep](https://github.com/BurntSushi/ripgrep)
 * A terminal that supports true color and **undercurl** 
     * [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?rtc=1&hl=en-au&gl=AU) (Windows)
