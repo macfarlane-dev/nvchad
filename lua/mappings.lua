@@ -21,7 +21,8 @@ map("n", "<leader>f\"", ":Telescope registers<CR>", { desc = "Telescope Find reg
 map("v", "<M-/>", "yq/p<CR>", { desc = "Search buffer for the selected text" })
 
 -- git
-map("n", "<leader>gl", ":Telescope git_commits<CR>", { desc = "Git Log" })
+map("n", "<leader>gl", ":Telescope git_commits<CR>", { desc = "Git commit Log" })
+map("v", "<leader>gb", ":Git blame<CR>", {desc = "Git blame line log"})
 
 map("n", "<leader>gs", ":Gedit :<CR>", { desc = "Git Status" })
 map("n", "<leader>gd", ":Gvdiff<CR>", { desc = "Git Diff" })
