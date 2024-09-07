@@ -6,7 +6,7 @@ This project forks the popular [NvChad](https://nvchad.com/docs/quickstart/insta
 
 * [NeoVim](https://github.com/neovim/neovim/releases/) >=0.10.0
 	* Get the latest version and `sha256sum` checksum from [the releases page](https://github.com/neovim/neovim/releases)
-	```shell
+	```bash
 	cd /tmp
 	version=0.10.1
 	curl -LO https://github.com/neovim/neovim/releases/download/v${version}/nvim-linux64.tar.gz 
@@ -32,7 +32,7 @@ This project forks the popular [NvChad](https://nvchad.com/docs/quickstart/insta
 		* Run `nvim` for the first time
 		* Navigate to `/AppData/Local/nvim-data/lazy/telescope-fzf-native`
 		* Run build command ([sourced from official docs](https://github.com/nvim-telescope/telescope-fzf-native.nvim))
-		```
+		```Desktop Development C++ build tools shell
 		cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build
 		```
 	* Windows: `zig` with `winget install zig.zig` (may take 10-20 minutes to install)
@@ -73,7 +73,7 @@ Read more at `:h mason`.
 
 The Python LSP `Pyright` requires a `pyrightconfig.json` [configuration file](https://microsoft.github.io/pyright/#/configuration) at a project root to [resolve imports](https://microsoft.github.io/pyright/#/import-resolution?id=configuring-your-python-environment).
 
-```pyrightconfig.json
+```json
 {
   "venv": "myvenv"
 }

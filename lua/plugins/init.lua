@@ -112,18 +112,6 @@ return {
     lazy = false,
   },
   {
-    "https://github.com/preservim/vim-markdown",
-    branch = "master",
-    dependencies = {
-      "https://github.com/godlygeek/tabular"
-    },
-    ft = "markdown",
-    config = function()
-      vim.g.vim_markdown_folding_disabled = 1
-      vim.opt.conceallevel = 2
-    end
-  },
-  {
     "nvim-tree/nvim-tree.lua",
     opts = function(_, opts)
       opts.filters = {
@@ -148,6 +136,30 @@ return {
       require("treesj").setup(
         require "configs.treesj"
       )
+    end,
+  },
+  {
+    "MeanderingProgrammer/render-markdown.nvim",
+    opts = {
+      dependencies = {"nvim-treesitter/treesitter", "echasnovski/mini.icons"}
+    },
+    ft = "markdown",
+    config = function()
+      require('render-markdown').setup({
+        debounce = 100,
+        render_modes = { 'n', 'c' },
+        injections = {
+          gitcommit = {
+            enabled = true,
+            query = [[
+              ((message) @injection.content
+                (#set! injection.combined)
+                (#set! injection.include-children)
+                (#set! injection.language "markdown"))
+            ]],
+          },
+        },
+      })
     end,
   },
 }
