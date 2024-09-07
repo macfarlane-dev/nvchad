@@ -49,7 +49,7 @@ map("t", "<ESC>", "<C-\\><C-n>", { desc = "Exit TERMINAL to NTERMINAL mode" })
 map("t", "jk", "<C-\\><C-n>", { desc = "Exit TERMINAL to NTERMINAL mode" })
 
 -- markdown
-map("n", "<leader>st", ":RenderMarkdown toggle", { desc = "Toggle markdown styling" })
+map("n", "<leader>st", ":RenderMarkdown toggle<CR>", { desc = "Toggle markdown styling" })
 
 -- special characters
 map("i", "<S-Tab>", "<C-V><Tab>", { desc = "Literal tab character" })
