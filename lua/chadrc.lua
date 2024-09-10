@@ -36,4 +36,17 @@ M.term = {
   },
 }
 
+M.mason = {
+  cmd = true,
+  pkgs = {
+    "lua-language-server",
+    "stylua",
+    "shellcheck",
+    "shfmt",
+    "prettier",
+    "terraform-ls",
+    "pyright",
+  },
+}
+
 return M

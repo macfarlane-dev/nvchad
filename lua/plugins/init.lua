@@ -13,15 +13,6 @@ return {
       -- 3. nvim-lspconfig
       {
         "williamboman/mason.nvim",
-        opts = {
-          ensure_installed = {
-            "lua-language-server", "stylua",
-            "shellcheck", "shfmt",
-    --			"prettier",
-            "terraform-ls",
-            "pyright",
-          },
-        },
       },
       {
         "williamboman/mason-lspconfig.nvim"
