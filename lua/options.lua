@@ -6,10 +6,6 @@ local o = vim.o
 o.autochdir = false
 o.colorcolumn = "80"
 
-if vim.opt.shell._value == "/bin/bash" then
-  vim.opt.shell = "/bin/bash --login"
-end
-
 -- WORKAROUND FOR ISSUES RUNNING GIT BASH FOR WINDOWS
 -- only unix shells on windows will end in sh.exe
 -- bash, zsh
