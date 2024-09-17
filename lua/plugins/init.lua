@@ -5,6 +5,26 @@ return {
     opts = require "configs.conform",
   },
   {
+    "hrsh7th/nvim-cmp",
+    opts = function()
+      local config = require "configs.cmp"
+      local cmp = require "cmp"
+
+      config.mapping["<CR>"] = cmp.mapping.confirm {
+        behavior = cmp.ConfirmBehavior.Insert,
+        select = false,
+      }
+
+      config.completion = {
+        completeopt = "menu,menuone,noselect",
+      }
+
+      config.preselect = cmp.PreselectMode.None
+
+      return config
+    end,
+  },
+  {
     "neovim/nvim-lspconfig",
     dependencies = {
       -- For LSP completion we must configure in order
