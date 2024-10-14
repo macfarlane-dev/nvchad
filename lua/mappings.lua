@@ -19,6 +19,7 @@ map("i", "<C-s>", "<ESC>:w<CR>a", { desc = "Save and say in insert mode" })
 map("n", "<leader>fk", ":Telescope keymaps<CR>", { desc = "Telescope Find Keymaps" })
 map("n", "<leader>f\"", ":Telescope registers<CR>", { desc = "Telescope Find registers" })
 map("v", "<M-/>", "yq/p<CR>", { desc = "Search buffer for the selected text" })
+map("n", "<M-/>", "viwyq/p<CR>", { desc = "Search buffer for the selected text" })
 
 -- git
 map("n", "<leader>gl", ":Telescope git_commits<CR>", { desc = "Git commit Log" })
