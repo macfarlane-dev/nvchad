@@ -21,6 +21,9 @@ map("n", "<leader>f\"", ":Telescope registers<CR>", { desc = "Telescope Find reg
 map("v", "<M-/>", "yq/p<CR>", { desc = "Search buffer for the selected text" })
 map("n", "<M-/>", "viwyq/p<CR>", { desc = "Search buffer for the selected text" })
 
+-- toggle line wrap
+map("n", "<leader>w", ":set wrap!<CR>", { desc = "Toggle line Wrap" })
+
 -- git
 map("n", "<leader>gl", ":Telescope git_commits<CR>", { desc = "Git commit Log" })
 map("v", "<leader>gb", ":Git blame<CR>", {desc = "Git blame line log"})
