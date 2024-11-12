@@ -49,3 +49,14 @@ In insert mode:
 `shift + p` or `P` replaces the visually selected block with the default register.
 
 [Read more here](https://learnbyexample.github.io/tips/vim-tip-1/).
+
+### Format text width
+
+1. Set textwidth to 80 (`:set textwidth=80`)
+2. Make a selection
+	* *Whole file:* move to the start of the file (can be done with Ctrl-Home or `gg`), and type `gqG`.
+	* *Visual selection*: `gq`
+
+### Extend visual selections
+
+`o` toggles if a visual selection extends from the top or bottom of the selection.
