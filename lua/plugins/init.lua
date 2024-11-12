@@ -174,13 +174,9 @@ return {
     end,
   },
   {
-    "mg979/vim-visual-multi",
+    "jake-stewart/multicursor.nvim",
     lazy = false,
-    init = function()
-      vim.g.VM_maps = {
-        ["Find Under"] = "<C-m>",
-        ["Find Subword Under"] = "<C-m>"
-      }
-    end,
+    branch = "1.0",
+    config = require "configs.multicursor"
   }
 }
