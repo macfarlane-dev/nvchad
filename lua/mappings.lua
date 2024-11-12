@@ -48,7 +48,7 @@ map("n", "<leader>fg", ":Telescope git_files<CR>", { desc = "Telescope Find Git 
 
 -- terminals
 map("n", "<M-t>", ":term<CR>:setlocal nonumber norelativenumber<CR>i",
-  { desc = "Open Terminal in buffer" })
+  { desc = "Open Terminal in buffer", silent = true })
 map("t", "<ESC>", "<C-\\><C-n>", { desc = "Exit TERMINAL to NTERMINAL mode" })
 map("t", "jk", "<C-\\><C-n>", { desc = "Exit TERMINAL to NTERMINAL mode" })
 
