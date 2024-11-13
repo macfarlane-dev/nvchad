@@ -32,7 +32,7 @@ This project forks the popular [NvChad](https://nvchad.com/docs/quickstart/insta
 		* Run `nvim` for the first time
 		* Navigate to `/AppData/Local/nvim-data/lazy/telescope-fzf-native`
 		* Run build command ([sourced from official docs](https://github.com/nvim-telescope/telescope-fzf-native.nvim))
-		```Desktop Development C++ build tools shell
+		```x86 Native Tools Command Prompt for VS 2022
 		cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build
 		```
 	* Windows: `zig` with `winget install zig.zig` (may take 10-20 minutes to install)

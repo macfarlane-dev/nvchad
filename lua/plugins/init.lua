@@ -175,8 +175,10 @@ return {
   },
   {
     "jake-stewart/multicursor.nvim",
-    lazy = false,
     branch = "1.0",
-    config = require "configs.multicursor"
+    event = "VeryLazy",
+    config = function()
+      require("configs.multicursor").setup()
+    end
   }
 }
