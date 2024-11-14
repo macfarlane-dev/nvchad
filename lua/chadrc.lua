@@ -23,6 +23,10 @@ M.ui = {
   },
 }
 
+M.nvdash = {
+  load_on_startup = true
+}
+
 M.term = {
   winopts = { number = false, relativenumber = false },
   sizes = { sp = 0.4, vsp = 0.4, ["bo sp"] = 0.4, ["bo vsp"] = 0.4 },
