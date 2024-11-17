@@ -11,6 +11,10 @@ map("v", "<leader>y", ":'<,'>w !clip.exe<CR>", { desc = "Yank from WSL to Window
 -- alternative escape from interactive mode
 map("i", "jk", "<ESC>")
 
+-- Navigate to line beginning/end
+map("n", "H", "^", { desc = "Navigate to beginning of the line" })
+map("n", "L", "$", { desc = "Navigate to end of the line" })
+
 -- An alternative way of saving
 map("i", "kjl", "<ESC>:w<CR>", { desc = "Save and exit insert mode" })
 map("i", "<C-s>", "<ESC>:w<CR>a", { desc = "Save and say in insert mode" })
