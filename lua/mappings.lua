@@ -28,6 +28,9 @@ map("n", "<M-/>", "viwyq/p<CR>", { desc = "Search buffer for the selected text" 
 -- toggle line wrap
 map("n", "<leader>w", ":set wrap!<CR>", { desc = "Toggle line Wrap" })
 
+-- toggle line numbers
+map("n", "<leader>ln", ":set number!<CR>", { desc = "Toggle line numbers" })
+
 -- git
 map("n", "<leader>gl", ":Telescope git_commits<CR>", { desc = "Git commit Log" })
 map("v", "<leader>gb", ":Git blame<CR>", {desc = "Git blame line log"})
