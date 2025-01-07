@@ -60,3 +60,7 @@ In insert mode:
 ### Extend visual selections
 
 `o` toggles if a visual selection extends from the top or bottom of the selection.
+
+### Checking file type
+
+`:set filetype?`
