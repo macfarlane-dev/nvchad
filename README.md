@@ -92,13 +92,30 @@ Read more at `:h treesitter`.
 
 `telescope-fzf-native` must be compiled locally. This project is configured to build automatically on Linux with `make`. If this fails the first time it can be re-built from the `:Lazy` menu by navigating to `telescope-fzf-native` and hitting `gb`.
 
-### Install `eksctl` schema
+## Add schemas
+
+Schemas are maintained in `schemas` directory and referenced from 
+`lua/configs/yaml-companion.lua`.
+
+### Update `eksctl` schema
 
 `yaml-companion` looks for local schemas at `~/.schemas`.
 If you are using eksctl, save it's schema with:
 
+```shell
+eks utils schema > schema/eksctl.json
 ```
-eks utils schema > ~/.schema/eksctl.json
+
+### Generate Helm Chart schemas
+
+Helm plugin [helm-schema-gen](https://github.com/karuppiah7890/helm-schema-gen) allows you to generate `values.schema.json` files 
+from a `yaml` template. Assuming you already have helm installed, install the
+plugin and create a schema from a remote yaml file like so:
+
+```bash
+helm plugin install https://github.com/karuppiah7890/helm-schema-gen.git
+URL=https://raw.githubusercontent.com/apache/superset/a21f1840580ed4e911406135b742a58442965cf7/helm/superset/values.yaml
+helm schema-gen <(curl -sL $URL) > schema/helm-superset.json
 ```
 
 ## Customisation

@@ -14,8 +14,12 @@ local options = {
     },
     {
       name = "eksctl",
-      uri = vim.fn.expand("~/.schemas/eksctl.json"),
-    }
+      uri = vim.fn.stdpath("config") .. "/schemas/eksctl.json",
+    },
+    {
+      name = "superset",
+      uri = vim.fn.stdpath("config") .. "/schemas/helm-superset.json",
+    },
   },
 
   -- Pass any additional options that will be merged in the final LSP config
