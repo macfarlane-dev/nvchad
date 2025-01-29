@@ -92,6 +92,14 @@ Read more at `:h treesitter`.
 
 `telescope-fzf-native` must be compiled locally. This project is configured to build automatically on Linux with `make`. If this fails the first time it can be re-built from the `:Lazy` menu by navigating to `telescope-fzf-native` and hitting `gb`.
 
+### Install `eksctl` schema
+
+`yaml-companion` looks for local schemas at `~/.schemas`.
+If you are using eksctl, save it's schema with:
+
+```
+eks utils schema > ~/.schema/eksctl.json
+```
 
 ## Customisation
 

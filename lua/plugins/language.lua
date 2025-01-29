@@ -33,6 +33,20 @@ return {
     end,
   },
   {
+    "someone-stole-my-name/yaml-companion.nvim",
+    ft = { "yaml", "yml" },
+    requires = {
+      { "neovim/nvim-lspconfig" },
+      { "nvim-lua/plenary.nvim" },
+      { "nvim-telescope/telescope.nvim" }
+    },
+    config = function()
+      require("telescope").load_extension("yaml_schema")
+      local cfg = require("yaml-companion").setup(require "configs.yaml-companion")
+      require("lspconfig")["yamlls"].setup(cfg)
+    end,
+  },
+  {
     "nvim-treesitter/nvim-treesitter",
   	opts = {
   		ensure_installed = {

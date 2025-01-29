@@ -33,5 +33,6 @@
   "vim-fugitive": { "branch": "master", "commit": "174230d6a7f2df94705a7ffd8d5413e27ec10a80" },
   "vim-terraform": { "branch": "master", "commit": "174789e2f0a1c8348ae129223581760807162e82" },
   "volt": { "branch": "main", "commit": "f02b065caf0327bf4d443ff6d91cb0edd6948ddb" },
-  "which-key.nvim": { "branch": "main", "commit": "1f8d414f61e0b05958c342df9b6a4c89ce268766" }
+  "which-key.nvim": { "branch": "main", "commit": "1f8d414f61e0b05958c342df9b6a4c89ce268766" },
+  "yaml-companion.nvim": { "branch": "main", "commit": "131b0d67bd2e0f1a02e0daf2f3460482221ce3c0" }
 }

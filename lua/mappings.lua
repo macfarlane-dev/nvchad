@@ -64,3 +64,15 @@ map("n", "<leader>st", ":RenderMarkdown toggle<CR>", { desc = "Toggle markdown s
 
 -- special characters
 map("i", "<S-Tab>", "<C-V><Tab>", { desc = "Literal tab character" })
+
+-- yaml schema selector for lsp
+map("n", "<leader>fs", ":Telescope yaml_schema<CR>", { silent = true,
+  desc = "Search for yaml schemas to apply to this buffer" })
+map("n", "<leader>cs", function()
+  local schema = require("yaml-companion").get_buf_schema(0)
+  if schema.result and schema.result[1] and schema.result[1].name ~= "none" then
+    vim.notify("Current YAML Schema: " .. schema.result[1].name, vim.log.levels.INFO)
+  else
+    vim.notify("No schema selected", vim.log.levels.WARN)
+  end
+end, { desc = "Show current YAML schema" })
