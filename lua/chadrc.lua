@@ -50,6 +50,7 @@ M.mason = {
     "prettier",
     "terraform-ls",
     "pyright",
+    "yaml-language-server"
   },
 }
 
