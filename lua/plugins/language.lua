@@ -14,9 +14,6 @@ return {
       },
     },
     config = function()
-      require("nvchad.configs.lspconfig").defaults()
-      require "configs.lspconfig"
-
       -- automatic lsp completion setup
       -- :h mason-lspconfig-automatic-server-setup
       require("mason").setup()
@@ -30,6 +27,9 @@ return {
               require("lspconfig")[server_name].setup {}
           end,
       }
+
+      require("nvchad.configs.lspconfig").defaults()
+      require "configs.lspconfig"
     end,
   },
   {
