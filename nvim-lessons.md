@@ -64,3 +64,36 @@ In insert mode:
 ### Checking file type
 
 `:set filetype?`
+
+## Registers
+
+* `:help registers`
+* Insert mode: `Ctrl-r <register>`
+* Visual mode: `"<register>`
+* Find registers with `:reg` or `<leader>f"`
+* `""` Last yank/delete/change/substitute
+* `"0` Last yank
+* `"1` Last delete
+* `"2` - `"9` History of deletes
+	* Delete modifiers like	`%`, `(`, ```, `/`, `?` and `n` are excluded
+* `"-` 'Small delete register' last delete not containing a new line
+* `"a` - `"z` Used for `q` macros
+	* Rather than recording a macro `qa`, insert the existing register contents and rewrite it with `:let @a='<Ctrl-r a>'`
+* `".` Last insert Mode
+* `":` Last command
+* `"/` Last search
+	* Useful to insert a search into a replace command
+* `"%` Current file
+	* `:help filename-modifiers` to split filename parts
+* `:#` Previous file name
+	* `Ctrl-6` navigates to this file
+* `"=` Opens a command prompt, the results of which will be inserted
+	* Useful as a calculator! `=24*17`
+	* List files in a directory `=system('ls ~/my/dir')`
+	* Generate a random name `=system('fancy')`
+* `"_` Black hole register - delete into this to have no record
+* `"*` or `"+` OS clipboard
+	* By default, only yanks in vim populate `"+`
+	* `set clipboard+=unnamedplus` in vim init will ALWAYS use the clipboard for all operators
+	* See `:help clipboard` for OS specific clipboard help
+
