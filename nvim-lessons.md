@@ -43,6 +43,7 @@ In insert mode:
 
 * `<C-a>` increments the number under the cursor or the first occurrence of a number to the right of the cursor
 * `<C-x>` decrements the number under the cursor or the first occurrence of a number to the right of the cursor
+* `g<C-a>` over a visual block of numbers to automatically increment each line
 
 ### Paste-replacing a visual selection
 
@@ -97,3 +98,15 @@ In insert mode:
 	* `set clipboard+=unnamedplus` in vim init will ALWAYS use the clipboard for all operators
 	* See `:help clipboard` for OS specific clipboard help
 
+## Reverse the line order of a whole file
+
+```vim
+:global/^/move 0
+:g/^/m 0
+```
+
+## Return to your previous line
+
+- ... after `G` or `gg` with `Ctrl+o`
+- and go forwards with `Ctrl+i`
+- these can move though your whole view history

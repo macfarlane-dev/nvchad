@@ -33,7 +33,7 @@ map("n", "<leader>ln", ":set number!<CR>", { desc = "Toggle line numbers" })
 
 -- git
 map("n", "<leader>gl", ":Telescope git_commits<CR>", { desc = "Git commit Log" })
-map("v", "<leader>gb", ":Git blame<CR>", {desc = "Git blame line log"})
+map("v", "<leader>gb", ":Gitsigns blame_line<CR>", {desc = "Git blame line log"})
 
 map("n", "<leader>gs", ":Gedit :<CR>", { desc = "Git Status" })
 map("n", "<leader>gd", ":Gvdiff<CR>", { desc = "Git Diff" })

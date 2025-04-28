@@ -148,3 +148,6 @@ helm schema-gen <(curl -sL $URL) > schema/helm-superset.json
 
 * [mini.nvim](https://github.com/echasnovski/mini.nvim)
 * [snacks.nvim](https://github.com/folke/snacks.nvim)
+* [avante.nvim](https://github.com/yetone/avante.nvim/tree/main)
+- [note.nvim](https://github.com/gsuuon/note.nvim)
+
