@@ -53,7 +53,8 @@ return {
   		  "vim", "lua", "vimdoc",
         "json", "yaml", "groovy", "query", "regex", "bash",
         "git_config",
-        "terraform"
+        "terraform",
+        "dockerfile"
   		},
   	},
   },
