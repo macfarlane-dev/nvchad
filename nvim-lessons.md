@@ -58,6 +58,10 @@ In insert mode:
 	* *Whole file:* move to the start of the file (can be done with Ctrl-Home or `gg`), and type `gqG`.
 	* *Visual selection*: `gq`
 
+### Format JSON buffer
+
+`:%!jq '.'`
+
 ### Extend visual selections
 
 `o` toggles if a visual selection extends from the top or bottom of the selection.
