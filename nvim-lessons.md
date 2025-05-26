@@ -60,7 +60,10 @@ In insert mode:
 
 ### Format JSON buffer
 
-`:%!jq '.'`
+The generic solution for any VIM environment with jq installed: `:%!jq '.'`
+`ftdetect/json.vim` sets up jq as the formatter for any json files.
+Call the default formatter for any file with `gq` and a motion, e.g. `gq%`.
+
 
 ### Extend visual selections
 
